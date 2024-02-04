@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class delete_vowel {
+    public static void main(String args[])
+    {Scanner aki=new Scanner(System.in);
+        System.out.println("Enter the String:");
+        String a=aki.nextLine();
+        String b=" ";
+        b=b+a.replaceAll("[aeiouAEIOU]","");
+        System.out.println("After replacing:"+b);
+
+    }
+}
