@@ -1,0 +1,22 @@
+public class changecase {
+    public static void main(String args[])
+    {
+        Scanner aki=new Scanner(System.in);
+        System.out.println("Enter the String:");
+        String b=aki.nextLine();
+        StringBuilder a=new StringBuilder(b);
+
+        for(int i=0;i<b.length();i++)
+        {
+            if(Character.isLowerCase(b.charAt(i)))
+            {
+                a.setCharAt(i,Character.toUpperCase(b.charAt(i)));
+            } else if(Character.isUpperCase(b.charAt(i))){
+                a.setCharAt(i,Character.toLowerCase(b.charAt(i)));
+
+        }
+            }
+        System.out.println("After string case conversion:"+a);
+        }
+    }
+
